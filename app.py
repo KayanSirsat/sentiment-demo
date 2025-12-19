@@ -5,8 +5,19 @@ from sklearn.linear_model import LogisticRegression
 
 def build_model():
 
-    texts = ["I love this product", "Great service", "Excellent quality", "Fast delivery", "Best purchase", "Terrible waste", "Bad service", "Hate this", "Slow and rude", "Disappoint", "Terrible experience"]
-    labels = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]  # 1 for positive, 0 for negative
+       texts = [
+        "I love this product", "Great service", "Excellent quality", "Fast delivery", "Best purchase",
+        "Amazing experience", "Very happy with this", "Good value", "Super helpful support", "Highly recommend",
+        "Perfect condition", "Works beautifully", "Five stars", "Incredible performance", "So easy to use",
+        "Nice design", "Prompt shipping", "Exceeded expectations", "Really satisfied", "Top notch",
+        
+        "Terrible waste of money", "Bad service", "Hate this", "Slow and rude", "Disappointed",
+        "Broken on arrival", "Worst purchase ever", "Not worth it", "Poor quality", "Did not work",
+        "Avoid this product", "Very angry", "Useless item", "Customer service is a joke", "Defective",
+        "Too expensive for what it is", "Complete failure", "Refund please", "Horrible experience", "Garbage"
+    ]
+    
+    labels = [1] * 20 + [0] * 20  # 1 for positive, 0 for negative
 
     vec = CountVectorizer()
     X = vec.fit_transform(texts)
