@@ -4,7 +4,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
 def build_model():
-
        texts = [
         "I love this product", "Great service", "Excellent quality", "Fast delivery", "Best purchase",
         "Amazing experience", "Very happy with this", "Good value", "Super helpful support", "Highly recommend",
@@ -16,14 +15,13 @@ def build_model():
         "Avoid this product", "Very angry", "Useless item", "Customer service is a joke", "Defective",
         "Too expensive for what it is", "Complete failure", "Refund please", "Horrible experience", "Garbage"
     ]
-    
-    labels = [1] * 20 + [0] * 20  # 1 for positive, 0 for negative
+       labels = [1] * 20 + [0] * 20  # 1 for positive, 0 for negative
 
-    vec = CountVectorizer()
-    X = vec.fit_transform(texts)
-    model = LogisticRegression()
-    model.fit(X, labels)
-    return vec, model
+       vec = CountVectorizer()
+       X = vec.fit_transform(texts)
+       model = LogisticRegression()
+       model.fit(X, labels)
+       return vec, model
 
 vectorizer, model = build_model()
 
