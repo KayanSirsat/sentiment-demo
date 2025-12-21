@@ -12,7 +12,7 @@ def build_model():
         
         "Terrible waste of money", "Bad service", "Hate this", "Slow and rude", "Disappointed",
         "Broken on arrival", "Worst purchase ever", "Not worth it", "Poor quality", "Did not work",
-        "Avoid this product", "Very angry", "Useless item", "Customer service is a joke", "Defective",
+        "Avoid this product", "Very angry", "Useless item", "The delivery was late", "Defective",
         "Too expensive for what it is", "Complete failure", "Refund please", "Horrible experience", "Garbage"
     ]
        labels = [1] * 20 + [0] * 20  # 1 for positive, 0 for negative
