@@ -1,4 +1,4 @@
-# 📊 Scalable Real-Time Sentiment Analysis Pipeline
+# 📊 Scalable Customer Sentiment Analysis Pipeline
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
@@ -8,8 +8,6 @@
 **[Click here to try the Live Web App](https://sentiment-demo-ultctfrfumn29rkdjy9uug.streamlit.app/)**
 
 ---
-
-# 📊 Scalable Customer Sentiment Analysis Pipeline
 
 ## Overview
 This project implements an end-to-end sentiment analysis pipeline for customer-like textual feedback.  
