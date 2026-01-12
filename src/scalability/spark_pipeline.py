@@ -1,3 +1,13 @@
+"""
+This script demonstrates how the sentiment analysis training pipeline
+can be scaled using Apache Spark for large datasets.
+
+The core project uses a single-node scikit-learn baseline for
+clarity, evaluation and reproducibility.
+
+This file is not used by the inference application.
+"""
+
 from pyspark.sql import SparkSession
 from pyspark.ml.feature import Tokenizer, HashingTF, IDF
 from pyspark.ml.classification import LogisticRegression
