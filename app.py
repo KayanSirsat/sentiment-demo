@@ -38,7 +38,7 @@ user_input = st.text_area(
 # Prediction logic
 
 if st.button("Predict Sentiment"):
-    if not user_input():
+    if not user_input.strip():
         st.warning("Please enter some text for prediction.")
     else:
         result = predictor.predict(user_input)
