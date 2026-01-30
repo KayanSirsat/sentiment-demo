@@ -19,7 +19,7 @@ def main():
         texts,
         labels,
         test_size = 0.2,
-        random_state = 42,
+        random_state = 30,
         stratify = labels
     )
 
