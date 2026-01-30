@@ -25,7 +25,7 @@ predictor = load_predictor()
 st.title("Sentiment Analysis - Inference Only")
 st.write(
     "This application performs sentiment prediction using a pre-trained"
-    "TF-IDP + Logistic Regression model. The model is Trained offline and "
+    " TF-IDF + Logistic Regression model. The model is Trained offline and "
     "used here only for inference."
 )
 
